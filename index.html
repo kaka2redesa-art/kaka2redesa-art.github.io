@@ -1,36 +1,94 @@
+meu-filme-favorito/
+│
+├── index.html
+└── style.css
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Desenho do Sol</title>
-  <style>
-    body {
-      margin: 0;
-      padding: 0;
-    }
-
-    .ceu {
-      width: 100vw;
-      height: 100vh;
-      background-color: #87CEEB; /* azul céu */
-      position: relative;
-    }
-
-    .sol {
-      width: 150px;
-      height: 150px;
-      background-color: yellow;
-      border-radius: 50%; /* forma circular */
-      position: absolute;
-      top: 50px;
-      left: 50px;
-      box-shadow: 0 0 60px yellow;
-    }
-  </style>
+  <title>Meu Site de Filmes</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="ceu">
-    <div class="sol"></div>
-  </div>
+  <header>
+    <h1>🎬 Meus Filmes Favoritos</h1>
+  </header>
+
+  <main>
+    <section class="filme">
+      <img src="https://m.media-amazon.com/images/I/51NiGlapXlL.jpg" alt="Capa do filme Exemplo">
+      <h2>O Poderoso Chefão</h2>
+      <p>Um clássico do cinema sobre a máfia italiana nos EUA.</p>
+    </section>
+
+    <section class="filme">
+      <img src="https://m.media-amazon.com/images/I/81EBpJ9IizL._AC_SY679_.jpg" alt="Capa do filme Batman">
+      <h2>Batman: O Cavaleiro das Trevas</h2>
+      <p>O herói enfrenta o vilão Coringa em um dos melhores filmes de super-herói.</p>
+    </section>
+
+    <section class="filme">
+      <img src="https://m.media-amazon.com/images/I/71niXI3lxlL._AC_SY679_.jpg" alt="Capa do filme Interstellar">
+      <h2>Interestelar</h2>
+      <p>Uma jornada épica pelo espaço e pelo tempo em busca de um novo lar.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Meu Catálogo de Filmes</p>
+  </footer>
 </body>
 </html>
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #121212;
+  color: #ffffff;
+}
+
+header {
+  background-color: #1f1f1f;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.filme {
+  background-color: #222;
+  border: 1px solid #333;
+  margin: 15px;
+  padding: 15px;
+  width: 250px;
+  text-align: center;
+  border-radius: 8px;
+}
+
+.filme img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.filme h2 {
+  margin-top: 10px;
+}
+
+footer {
+  background-color: #1f1f1f;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
