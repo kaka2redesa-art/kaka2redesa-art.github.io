@@ -4,37 +4,33 @@
   <meta charset="UTF-8">
   <title>Desenho do Sol</title>
   <style>
-    /* CSS será adicionado aqui */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    .ceu {
+      width: 100vw;
+      height: 100vh;
+      background-color: #87CEEB; /* azul céu */
+      position: relative;
+    }
+
+    .sol {
+      width: 150px;
+      height: 150px;
+      background-color: yellow;
+      border-radius: 50%; /* forma circular */
+      position: absolute;
+      top: 50px;
+      left: 50px;
+      box-shadow: 0 0 60px yellow;
+    }
   </style>
 </head>
-<body>
-  <!-- Elementos do desenho aqui -->
-</body>
-</html>
 <body>
   <div class="ceu">
     <div class="sol"></div>
   </div>
 </body>
-body {
-  margin: 0;
-  padding: 0;
-}
-
-.ceu {
-  width: 100vw;
-  height: 100vh;
-  background-color: #87CEEB; /* azul céu */
-  position: relative;
-}
-
-.sol {
-  width: 150px;
-  height: 150px;
-  background-color: yellow;
-  border-radius: 50%; /* forma circular */
-  position: absolute;
-  top: 50px;
-  left: 50px;
-  box-shadow: 0 0 60px yellow;
-}
+</html>
